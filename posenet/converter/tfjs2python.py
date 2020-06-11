@@ -9,7 +9,9 @@ import tempfile
 
 from posenet.converter.config import load_config
 
-BASE_DIR = os.path.join(tempfile.gettempdir(), '_posenet_weights')
+#tmpdir = tempfile.gettempdir()
+tmpdir = "tmp"
+BASE_DIR = os.path.join(tmpdir, '_posenet_weights')
 
 
 def to_output_strided_layers(convolution_def, output_stride):

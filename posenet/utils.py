@@ -10,6 +10,9 @@ def valid_resolution(width, height, output_stride=16):
     return target_width, target_height
 
 
+def process_input(source_img, scale_factor=1.0, output_stride=16):
+  return _process_input(source_img, scale_factor, output_stride)
+
 def _process_input(source_img, scale_factor=1.0, output_stride=16):
     target_width, target_height = valid_resolution(
         source_img.shape[1] * scale_factor, source_img.shape[0] * scale_factor, output_stride=output_stride)
