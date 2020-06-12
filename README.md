@@ -37,3 +37,6 @@ Also could be called via curl:
 - curl -X POST -F "file=@image.jpg" host:port/pose/pic --output out.jpg
 
 ### Docker
+
+The flask service wrapped into a [docker image](https://hub.docker.com/repository/docker/tprlab/tf-posenet-python).
+
