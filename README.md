@@ -41,4 +41,4 @@ Also could be called via curl:
 The flask service wrapped into a [docker image](https://hub.docker.com/repository/docker/tprlab/tf-posenet-python).
 
 - docker pull tprlab/tf-posenet-python
-- docker run -p <host:port>:80 tprlab/tf-posenet-python
+- docker run -p <<host:port>>:80 tprlab/tf-posenet-python
